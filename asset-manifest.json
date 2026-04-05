@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gunjan.github.io/static/css/main.04e3b7c5.css",
+    "main.js": "/gunjan.github.io/static/js/main.d8568b15.js",
+    "static/js/453.635f5f07.chunk.js": "/gunjan.github.io/static/js/453.635f5f07.chunk.js",
+    "index.html": "/gunjan.github.io/index.html",
+    "main.04e3b7c5.css.map": "/gunjan.github.io/static/css/main.04e3b7c5.css.map",
+    "main.d8568b15.js.map": "/gunjan.github.io/static/js/main.d8568b15.js.map",
+    "453.635f5f07.chunk.js.map": "/gunjan.github.io/static/js/453.635f5f07.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04e3b7c5.css",
+    "static/js/main.d8568b15.js"
+  ]
+}
