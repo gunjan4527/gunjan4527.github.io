@@ -23,7 +23,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="App" id="top">
       <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
 
       <Hero />

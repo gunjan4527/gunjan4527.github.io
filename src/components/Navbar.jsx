@@ -5,19 +5,13 @@ export default function Navbar() {
     <nav className="navbar">
       <h2 className="logo">GUNJAN KUMAR</h2>
 
-      <ul className="nav-links">
-
-        {/* Active link */}
-        <ul className="nav-links">
-
-          <a href="#">Home</a>
-          <a href="#data-skills-btn">Data skills</a>
-          <a href="#resume">Resume</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-
-        </ul>
-      </ul>
+      <div className="nav-links" aria-label="Primary">
+        <a href="#top">Home</a>
+        <a href="#data-skills-btn">Data skills</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
     </nav>
   );
 }

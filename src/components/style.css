@@ -154,6 +154,7 @@
     width: 100%;
     max-width: 100%;
     /* clean alignment */
+    box-sizing: border-box;
 }
 
 .glass {
@@ -185,6 +186,88 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .hero-content {
+        width: min(100%, 920px) !important;
+        padding: 28px 20px !important;
+        gap: 24px;
+    }
+
+    .hero-container {
+        gap: 24px;
+    }
+
+    .contact-container {
+        gap: 20px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 14px 56px 14px !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 18px 14px !important;
+    }
+
+    .hero-details {
+        align-items: center;
+    }
+
+    .hero-tagline {
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: min(54vw, 210px);
+        height: auto;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .glass {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .chatbot-content {
+        width: min(92vw, 340px);
+        right: 12px;
+        bottom: 64px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section {
+        padding: 40px 12px;
+    }
+
+    .skills-container,
+    .extra-skills {
+        gap: 12px;
+    }
+
+    .skill-card {
+        width: 130px;
+        height: 130px;
+        border-radius: 16px;
+    }
+
+    .input-group input,
+    .input-group textarea {
+        font-size: 16px;
+    }
 }
 
 
