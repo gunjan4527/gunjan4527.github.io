@@ -251,6 +251,8 @@ body.light {
 .exp-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+
+  box-shadow: 0 0 20px #38bdf8, 0 0 40px #38bdf8;
 }
 
 .exp-card h3 {
@@ -323,6 +325,8 @@ body.light {
 .timeline-content:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  
+  box-shadow: 0 0 20px #38bdf8, 0 0 40px #38bdf8;
 }
 
 /* Text */
@@ -531,6 +535,8 @@ body.light {
   transform: scale(1.05);
   transform: translateY(-8px);
   box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+  
+  box-shadow: 0 0 20px #38bdf8, 0 0 40px #38bdf8;
 }
 
 .project-card p,
@@ -664,7 +670,7 @@ body {
     height: 340px;
   }
 
-  .projects,
+  /* .projects, */
   .skills-section,
   .chart-section {
     padding-left: 24px;
@@ -764,7 +770,7 @@ body {
 }
 
 @media (max-width: 480px) {
-  .projects,
+  /* .projects, */
   .skills-section,
   .contact-section,
   .resume,
@@ -816,7 +822,7 @@ body {
     padding: 7px 10px;
   }
 
-  .projects,
+  /* .projects, */
   .skills-section,
   .resume,
   .experience,
@@ -861,7 +867,7 @@ body {
     padding: 6px 8px;
   }
 
-  .projects,
+  /* .projects, */
   .skills-section,
   .contact-section,
   .resume,
