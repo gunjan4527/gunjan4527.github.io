@@ -8,7 +8,7 @@ export default function Resume() {
       <div className="exp-card glass-card">
         <h3>Download My Resume</h3>
 
-        <a href="/resume.pdf" download className="resume-btn">
+        <a href="/Gunjan_Kumar_Resume.pdf" download className="resume-btn">
           ⬇ Download Resume
         </a>
       </div>

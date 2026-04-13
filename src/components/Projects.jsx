@@ -66,6 +66,20 @@ export default function Projects() {
       linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
       tech: "Tableau"
     },
+    {
+      title: "Medical Context-Based Chatbot (RAG)",
+      desc: "Built a RAG-based medical chatbot for context-aware question answering",
+      github: "https://github.com/gunjan4527/spotify-analysis",
+      linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
+      tech: "Python 3.10, Machine Learning /NLP,LLM & Embeddings,Backend & API,Frontend / UI"
+    },
+    {
+      title: "AI-powered Crop Recommendation System",
+      desc: "Crop Recommendation System that helps farmers choose the most suitable crops based on soil nutrients and environmental conditions.",
+      github: "https://github.com/gunjan4527/spotify-analysis",
+      linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
+      tech: "Python, ML,Pandas, NumPy, EDA,Flask (REST API)"
+    },
   ];
 
   return (
