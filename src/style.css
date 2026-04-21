@@ -1800,36 +1800,7 @@ body {
     }
 }
 
-
-/* =========================================================
-   NEWLY ADDED ANIMATION CLASSES FOR HTML USAGE 
-   ========================================================= */
-
-/* 1. SCROLL SLIDE ANIMATIONS (Add "hidden slide-up" to your html tags) */
-.hidden {
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
-}
-
-.slide-up {
-  transform: translateY(60px);
-}
-
-.slide-left {
-  transform: translateX(-60px);
-}
-
-.slide-right {
-  transform: translateX(60px);
-}
-
-.show {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-
-/* 2. 3D FLIP CARDS (Structure your HTML for this) */
+/* 2. 3D FLIP CARDS (For your HTML) */
 .flip-card {
   background-color: transparent;
   perspective: 1000px; /* Essential for 3D */
@@ -1853,10 +1824,52 @@ body {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  border-radius: 15px; /* Matches your project cards */
+  border-radius: 15px; 
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
   background: #1e293b;
+}
+
+
+/* =========================================================
+   SECTION SCROLL ANIMATIONS (Triggered by JS Observer)
+   ========================================================= */
+
+/* Slide Up Sections */
+.skills-section, 
+.resume, 
+.contact-section {
+    opacity: 0;
+    transform: translateY(80px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Slide in from Left Sections */
+.projects, 
+.chart-section {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Slide in from Right Sections */
+.experience,
+.education {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* The 'show' class that makes them visible */
+.skills-section.show, 
+.resume.show, 
+.contact-section.show, 
+.projects.show, 
+.chart-section.show, 
+.experience.show,
+.education.show {
+    opacity: 1;
+    transform: translate(0, 0);
 }
