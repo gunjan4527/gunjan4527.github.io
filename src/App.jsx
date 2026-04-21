@@ -28,14 +28,23 @@ function App() {
     <div className="App" id="top">
 
       <Helmet>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-96NZBCQE7L"></script>
+        {/* Load gtag.js */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-96NZBCQE7L"
+        ></script>
+
+        {/* Initialize GA */}
         <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-96NZBCQE7L');
+          {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-96NZBCQE7L');
+    `}
         </script>
       </Helmet>
+
       <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
 
       <Hero />
