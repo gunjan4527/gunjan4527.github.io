@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
@@ -24,6 +26,16 @@ function App() {
 
   return (
     <div className="App" id="top">
+
+      <Helmet>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-96NZBCQE7L"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-96NZBCQE7L');
+        </script>
+      </Helmet>
       <Navbar toggleTheme={toggleTheme} darkMode={darkMode} />
 
       <Hero />
