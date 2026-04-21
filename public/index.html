@@ -47,22 +47,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      // Creates a watcher to check when sections enter the screen
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-}, { threshold: 0.1 }); // Triggers when 10% of the section is visible
-
-// Grab all your sections exactly by their class names
-const sections = document.querySelectorAll('.skills-section, .projects, .experience, .resume, .education, .chart-section, .contact-section');
-
-// Tell the watcher to keep an eye on them
-sections.forEach(sec => observer.observe(sec));
-    </script>
 </body>
 
 </html>
