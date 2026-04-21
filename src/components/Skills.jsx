@@ -9,7 +9,7 @@ import {
 } from "react-icons/si";
 import { FaChartBar, FaDatabase } from "react-icons/fa";
 
-import "./style.css";
+import "../style.css";
 
 export default function Skills() {
   const skills = [

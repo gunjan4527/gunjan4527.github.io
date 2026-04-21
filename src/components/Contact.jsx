@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
-import "./style.css";
+import "../style.css";
 
 export default function Contact() {
   const form = useRef();

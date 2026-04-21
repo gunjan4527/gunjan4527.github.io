@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import './style.css'
+import '../style.css'
 
 export default function Chatbot() {
   const [messages, setMessages] = useState([
@@ -135,7 +135,7 @@ export default function Chatbot() {
 
 // import React, { useState, useEffect, useRef } from "react";
 
-// import './style.css'
+// import '../style.css'
 
 // export default function Chatbot() {
 //   const [messages, setMessages] = useState([
