@@ -9,17 +9,18 @@ export default function Skills() {
         { name: "Python", img: "/python image.png", color: "#3776AB" },
         { name: "SQL", img: "/sql-3d-icon-png.webp", color: "#00758F" },
         { name: "PostgreSQL", img: "/download (2).png", color: "#336791" },
+        { name: "R", img: "/download (2).jpg", color: "#336791" },
       ]
     },
     {
-      title: "Data Science & ML",
+      title: "Data Analysis",
       skills: [
         { name: "Pandas", img: "/pandas-logo-png_seeklogo-459105.png", color: "#150458" },
         { name: "NumPy", img: "/images.png", color: "#013243" },
-        { name: "TensorFlow", img: "/TensorFlow_logo.svg.png", color: "#FF6F00" },
-        { name: "PyTorch", img: "/images.jpg", color: "#EE4C2C" },
-        { name: "XGBoost", img: "/xgboost.png", color: "#FF6F00" },
-        { name: "NLTK", img: "/0_zKRz1UgqpOZ4bvuA.png", color: "#4B8BBE" }
+        { name: "Excel", img: "/download (5).png", color: "#013243" },
+        { name: "EDA", img: "/download (6).png", color: "#013243" },
+        { name: "Data Cleaning", img: "/10179126.png", color: "#013243" },
+        { name: "Statistical Analysis", img: "/statistical-analysis-flat-illustration_120816-4224.avif", color: "#013243" },
       ]
     },
     {
@@ -37,7 +38,9 @@ export default function Skills() {
         { name: "Docker", img: "/download.jpg", color: "#2496ED" },
         { name: "AWS", img: "/Amazon_Web_Services-Logo.wine.png", color: "#FF9900" },
         { name: "GCP", img: "/download (1).png", color: "#4285F4" },
-        { name: "GitHub", img: "/download (3).png", color: "#000000" }
+        { name: "GitHub", img: "/download (3).png", color: "#000000" },
+        { name: "Jupyter Notebook", img: "/Jupyter_logo.svg.png", color: "#FF9900" },
+        { name: "VS-Code", img: "/download (7).png", color: "#FF9900" },
       ]
     }
   ];
