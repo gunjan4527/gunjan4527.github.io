@@ -1,60 +1,72 @@
 import React from "react";
-import {
-  SiPython,
-  SiMysql,
-  SiPandas,
-  SiNumpy,
-  SiReact,
-  SiJavascript,
-} from "react-icons/si";
-import { FaChartBar, FaDatabase } from "react-icons/fa";
-
-import "../style.css";
 
 export default function Skills() {
-  const skills = [
-    { name: "Python", icon: <SiPython /> },
-    { name: "SQL", icon: <SiMysql /> },
-    { name: "Pandas", icon: <SiPandas /> },
-    { name: "NumPy", icon: <SiNumpy /> },
-    { name: "React", icon: <SiReact /> },
-    { name: "JavaScript", icon: <SiJavascript /> },
-    { name: "Data Analysis", icon: <FaChartBar /> },
-    { name: "Database", icon: <FaDatabase /> },
+
+  const skillGroups = [
+    {
+      title: "Languages & Databases",
+      skills: [
+        { name: "Python", img: "/python image.png", color: "#3776AB" },
+        { name: "SQL", img: "/sql-3d-icon-png.webp", color: "#00758F" },
+        { name: "PostgreSQL", img: "/download (2).png", color: "#336791" },
+      ]
+    },
+    {
+      title: "Data Science & ML",
+      skills: [
+        { name: "Pandas", img: "/pandas-logo-png_seeklogo-459105.png", color: "#150458" },
+        { name: "NumPy", img: "/images.png", color: "#013243" },
+        { name: "TensorFlow", img: "/TensorFlow_logo.svg.png", color: "#FF6F00" },
+        { name: "PyTorch", img: "/images.jpg", color: "#EE4C2C" },
+        { name: "XGBoost", img: "/xgboost.png", color: "#FF6F00" },
+        { name: "NLTK", img: "/0_zKRz1UgqpOZ4bvuA.png", color: "#4B8BBE" }
+      ]
+    },
+    {
+      title: "BI & Visualization",
+      skills: [
+        { name: "Power BI", img: "/power-bi-2021.png", color: "#F2C811" },
+        { name: "Tableau", img: "/tableau-software.png", color: "#E97627" },
+        { name: "Matplotlib", img: "/download (4).png", color: "#E97627" },
+        { name: "Seaborn", img: "/download (1).jpg", color: "#F2C811" }
+      ]
+    },
+    {
+      title: "Tools & Cloud",
+      skills: [
+        { name: "Docker", img: "/download.jpg", color: "#2496ED" },
+        { name: "AWS", img: "/Amazon_Web_Services-Logo.wine.png", color: "#FF9900" },
+        { name: "GCP", img: "/download (1).png", color: "#4285F4" },
+        { name: "GitHub", img: "/download (3).png", color: "#000000" }
+      ]
+    }
   ];
 
   return (
     <section className="skills-section" id="skills">
-      <h2 className="skills-title">My Skills</h2>
+      <h2 className="skills-title">💻 Tech Stack</h2>
 
-      <div className="skills-container">
-        {skills.map((skill, index) => (
-          <div className="skill-card" key={index}>
-            <div className="icon">{skill.icon}</div>
-            <p>{skill.name}</p>
+      {skillGroups.map((group, i) => (
+        <div key={i} className="skill-group">
+
+          <h3>{group.title}</h3>
+
+          <div className="skills-row">
+
+            {group.skills.map((skill, index) => (
+              <div
+                key={index}
+                className="skill-badge glass"
+                style={{ backgroundColor: skill.color }}
+              >
+                <img src={skill.img} alt={skill.name} />
+                <span>{skill.name}</span>
+              </div>
+            ))}
+
           </div>
-        ))}
-        
-      {/* 🔥 Power BI + Tableau as images */}
-      <div className="extra-skills">
-        <div className="skill-card">
-          <img src="power-bi-2021.png" alt="Power BI" />
-          <p>Power BI</p>
         </div>
-
-        
-        <div className="skill-card">
-          <img src="download.png" alt="Excel" />
-          <p>Excel</p>
-        </div>
-
-        <div className="skill-card">
-          <img src="tableau-software.png" alt="Tableau" />
-          <p>Tableau</p>
-        </div>
-      </div>
-      </div>
-
+      ))}
     </section>
   );
 }
