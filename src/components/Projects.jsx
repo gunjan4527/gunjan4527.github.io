@@ -11,6 +11,13 @@ export default function Projects() {
       tech: "Python, Data Visualization, SQL, Power BI"
     },
     {
+      title: "HR Analytics Employee-Attrition-Prediction",
+      desc: "Analyzed 1,470+ employee records using Python and SQL to uncover attrition patterns across departments, job roles, and salary bands.",
+      github: "https://github.com/gunjan4527/HR-Analytics-Employee-Attrition-Prediction",
+      linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
+      tech: "Python, SQL, Power BI, Pandas, Seaborn, Scikit-Learn"
+    },
+    {
       title: "Restaurent Data Analysis",
       desc: "I Analyzed 9,551 restaurants across 15 countries using Pandas,Numpy,Data visualization, and ML",
       github: "https://github.com/gunjan4527/Restaurant-Data-Analysis",
@@ -79,6 +86,13 @@ export default function Projects() {
       github: "https://github.com/gunjan4527/Crop-Recoomendation-System",
       linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
       tech: "Python, ML,Pandas, NumPy, EDA,Flask (REST API)"
+    },
+     {
+      title: "Paper 2 Code — Research Paper to Code Generator",
+      desc: "Built an AI-powered tool that automatically converts academic research papers (PDFs) into executable Python code,bridging the gap between research and implementation.",
+      github: "https://github.com/gunjan4527?tab=repositories",
+      linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
+      tech: "Python • LangChain • OpenAI API • HuggingFace • Streamlit • arXiv API"
     },
   ];
 

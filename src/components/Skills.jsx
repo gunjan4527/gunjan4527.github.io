@@ -8,7 +8,6 @@ export default function Skills() {
       skills: [
         { name: "Python", img: "/python image.png", color: "#3776AB" },
         { name: "SQL", img: "/sql-3d-icon-png.webp", color: "#8f0000" },
-        { name: "PostgreSQL", img: "/download (2).png", color: "#336791" },
         { name: "R", img: "/download (2).jpg", color: "#339164" },
       ]
     },
