@@ -517,7 +517,7 @@ body.light {
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  height: 200px;
+  height: 260px;
 }
 
 .project-card:hover {
@@ -531,7 +531,7 @@ body.light {
 }
 
 .project-card p {
-  line-height: 0.85;
+  line-height: 1.5;
 }
 
 .project-card h3 {
