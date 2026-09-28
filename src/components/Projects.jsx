@@ -94,6 +94,13 @@ export default function Projects() {
       linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
       tech: "Python • LangChain • OpenAI API • HuggingFace • Streamlit • arXiv API"
     },
+    {
+      title: "Netflix Movies & TV Shows Analysis",
+      desc: "Analyzed 8,800+ Netflix titles using SQL to explore content trends across genres, countries, and years. Wrote complex SQL (CTEs, subqueries, window functions) to compare Movies vs TV Shows and rank top countries",
+      github: "https://github.com/gunjan4527/Netflix-SQL",
+      linkedin: "https://www.linkedin.com/in/gunjan-kumar-5866042aa",
+      tech: " SQL, MySQL, PostgreSQL"
+    },
   ];
 
   return (
